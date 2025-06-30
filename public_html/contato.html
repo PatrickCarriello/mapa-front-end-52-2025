@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Patrick Carriello - Fale Comigo</title>
+    <meta name="description" content="Entre em contato com Patrick Carriello para discutir projetos, oportunidades ou tirar dúvidas. Preencha o formulário ou use os links das redes sociais.">
+    <meta name="keywords" content="contato, e-mail, telefone, redes sociais, formulário de contato, orçamento">
+    <link rel="canonical" href="https://www.mapa-front-end.netlify.com.br/contato.html">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Meu Portfólio</a></h1>
+            <nav class="nav">
+                <button class="nav-toggle" aria-label="Abrir menu">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre Mim</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content section-padding">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p class="contact-intro">Ficarei feliz em discutir seu projeto ou responder suas perguntas. Preencha o formulário abaixo ou me encontre nas redes sociais!</p>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required placeholder="Seu nome completo">
+                    <div class="error-message" id="nameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required placeholder="seu.email@example.com">
+                    <div class="error-message" id="emailError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Assunto:</label>
+                    <input type="text" id="subject" name="subject" required placeholder="Qual o motivo do contato?">
+                    <div class="error-message" id="subjectError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="6" required placeholder="Escreva sua mensagem aqui..."></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                 <div class="success-message" id="successMessage"></div>
+            </form>
+            
+            <div class="contact-info">
+                <h3>Outras Formas de Contato:</h3>
+                <p><i class="fas fa-envelope"></i> E-mail: <a href="mailto:patrick@carriello.com">patrick@carriello.com</a></p>
+                <p><i class="fas fa-phone"></i> Telefone: <a href="tel:+5522992313068">+55 22 99231-3068</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Patrick Carriello. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="https://br.linkedin.com/in/patrick-carriello-alves-3468b0146" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/PatrickCarriello" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
